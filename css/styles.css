@@ -1,0 +1,520 @@
+/* -------------------------------------- RESET ESTILOS -------------------------------------- */
+
+*{
+margin: 0%;
+padding: 0%;
+}
+
+/* -------------------------------------- ESTILOS GENERALES -------------------------------------- */
+
+main{
+    padding: 20px 0px ;
+    background-image: url("../images/background.jpg");
+}
+
+.texto{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:floralwhite;
+}
+
+/* -------------------------------------- ESTILOS HEADER -------------------------------------- */
+
+.logo{
+    width: 110px;
+    margin: 10px;
+}
+
+header nav div div ul{
+    margin: 10px 60px 10px 20px;
+    font-size: 20px;
+}
+
+
+/* -------------------------------------- ESTILOS FOOTER -------------------------------------- */
+
+footer{
+    background-color: #3C3C3C;
+    padding: 20px ;
+}
+
+footer nav a{
+    text-decoration: none;
+}
+
+footer nav {
+    display: grid;
+    height: 134px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    font-size: 15px;
+    justify-content: center;
+    align-content: center ;
+}
+
+.youtube{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+.youtube_icon{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    align-self: end;
+    justify-self: center; 
+}
+.youtube_img{
+    width: 40px;
+    height: 40px;
+}
+
+.instagram{
+    grid-column: 4/7;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+.instagram_icon{
+    grid-column: 4/7;
+    grid-row: 1/2;
+    align-self: end;
+    justify-self: center; 
+}
+.instagram_img{
+    width: 40px;
+    height: 40px;
+}
+
+.facebook{
+    grid-column: 7/10;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+.facebook_icon{
+    grid-column: 7/10;
+    grid-row: 1/2;
+    align-self: end;
+    justify-self: center; 
+}
+.facebook_img{
+    width: 40px;
+    height: 40px;
+}
+
+.logo_pie{
+    grid-column: 10/13;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: end;
+}
+
+/* ----- MQ ----- */
+
+@media screen and (max-width: 559px){
+    .instagram{
+        display: none;
+    }
+    .youtube{
+        display: none;
+    }
+    .facebook{
+        display: none;
+    }
+    .logo_pie{
+        display: none;
+    }
+    
+    .youtube_icon{
+        grid-column: 1/5;
+        grid-row: 1/3;
+        align-self: center;
+    }
+    .instagram_icon{
+        grid-column: 5/9;
+        grid-row: 1/3;
+        align-self: center;
+    }
+    .facebook_icon{
+        grid-column: 9/13;
+        grid-row: 1/3;
+        align-self: center;
+    }
+}
+
+
+/* -------------------------------------- ESTILOS PAGE INICIO -------------------------------------- */
+
+
+.portada_des{
+    padding-bottom: 20px ;
+}
+.portada_mob{
+    padding-bottom: 20px ;
+}
+
+main h1{
+    padding: 10px 20px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.novedades{
+    margin: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.video{
+    width: 500px;
+    height: 300px;
+}
+
+main h2{
+    margin: 5mm;
+}
+
+a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: black;
+}
+
+.portada_mob{
+    display: none;
+}
+
+/* ----- MQ ----- */
+
+@media screen and (max-width: 559px){
+    .portada_des{
+        display: none
+    }
+    .portada_mob{
+        display: block
+    }
+    .logo{
+        width: 80px;
+    }
+    .video{
+        width:100%;
+        height:100%;
+    }
+
+}
+
+
+/* -------------------------------------- ESTILOS PAGE BIOGRAFÍA -------------------------------------- */
+
+.fotos_bio{
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-size: 18px;
+    color: darkgray;
+    text-align: justify;
+    margin: 5mm;
+}
+.carrousel_fotos{
+    padding: 20px;
+    width: 130vh;
+}
+.spotify{
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------------------------------- ESTILOS PAGE AGENDA -------------------------------------- */
+
+.evento{
+    margin: 20px;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 30px;
+}
+
+.info1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: gray;
+    padding-left: 5px;
+
+}
+.flyer1{
+    grid-column: 3/5;
+    grid-row: 1/2;
+    background-color: gray;
+    padding: 5px;
+}
+
+.flyer1 img{
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+}
+
+.flyer1_mini{
+    display: none;
+    background-color: gray;
+    padding: 5px;
+}
+
+.flyer1_mini img{
+    width: 100%;
+    height: 100%;
+}
+.mapa1{
+    grid-column: 5/7;
+    grid-row: 1/2;
+    align-content: center;
+    background-color: gray;
+    padding: 5px;
+}
+.mapa1 iframe{
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+}
+
+.info2{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: gray;
+    padding-left: 5px;
+}
+.flyer2{
+    grid-column: 3/5;
+    grid-row: 2/3;
+    background-color: gray;
+    padding: 5px;
+}
+.flyer2 img{
+    width: 100%;
+    height: 100%;
+}
+.flyer2_mini{
+    display: none;
+    background-color: gray;
+    padding: 5px;
+}
+.flyer2_mini img{
+    width: 100%;
+    height: 100%;
+}
+.mapa2{
+    grid-column: 5/7;
+    grid-row: 2/3;
+    align-content: center;
+    background-color: gray;
+    padding: 5px;
+}
+.mapa2 iframe{
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+}
+
+/* ----- MQ ----- */
+
+@media screen and (max-width: 800px) {
+    .mapa1{
+        display: none;
+    }
+    .mapa2{
+        display: none;
+    }
+    .info1{
+        grid-column:1/4 ;
+    }
+    .info2{
+        grid-column:1/4 ; 
+    }
+    .flyer1{
+        display: none;
+    }
+    .flyer2{
+        display: none;
+    }
+    .flyer1_mini{
+        display: block;
+        grid-column:4/7;
+        grid-row:1/2
+    }
+    .flyer2_mini{
+        display: block;
+        grid-column: 4/7;
+        grid-row:2/3;
+    }
+    h4{
+        font-size: 20px;
+    }
+}
+
+/* -------------------------------------- ESTILOS PAGE DISCOGRAFÍA -------------------------------------- */
+
+.discografia{
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section div{
+    font-size: 20px;
+}
+
+.tapa_disco1{
+    display: inline-block;
+    width: 400px;
+}
+.tapa_disco2{
+    display: inline-block;
+    width: 400px;
+}
+.tapa_disco3{
+    display: inline-block;
+    width: 400px;
+}
+.tapa_single{
+    display: inline-block;
+    width: 400px;
+}
+
+.contratapa_disco1{
+    display: inline-block;
+    width: 400px;   
+}
+.contratapa_disco2{
+    display: inline-block;
+    width: 400px;   
+}
+.contratapa_disco3{
+    display: inline-block;
+    width: 400px;   
+}
+
+
+.titulo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color:floralwhite;
+}
+
+
+.descripcion{
+    text-align: center;
+}
+
+
+
+.contratapa_disco1{
+    display: none;
+}
+.contratapa_disco2{
+    display: none;
+}
+.contratapa_disco3{
+    display: none;
+}
+
+/* ----- Pseudoclases ----- */
+
+.disco1:hover{
+    .tapa_disco1{
+        display: none;
+    }
+    .contratapa_disco1{
+        display: block;
+    }
+}
+.disco2:hover{
+    .tapa_disco2{
+        display: none;
+    }
+    .contratapa_disco2{
+        display: block;
+    }
+}
+.disco3:hover{
+    .tapa_disco3{
+        display: none;
+    }
+    .contratapa_disco3{
+        display: block;
+    }
+}
+
+/* ----- MQ ----- */
+
+@media screen and (max-width:420px) {
+    .tapa_disco1{
+        width: 300px;
+    }
+    .tapa_disco2{
+        width: 300px;
+    }
+    .tapa_disco3{
+        width: 300px;
+    }
+    .tapa_single{
+        width: 300px;
+    }   
+    .contratapa_disco1{
+        width: 300px;  
+    }
+    .contratapa_disco2{
+        width: 300px;
+    }
+    .contratapa_disco3{
+        width: 300px;  
+    }
+    .titulo{
+        font-size: 20px;
+    }
+}
+
+
+/* -------------------------------------- ESTILOS PAGE CONTACTO -------------------------------------- */
+
+.contacto{
+    padding: 10px;
+    width: 100%;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+.input{
+    width: 500px;
+}
+.input_msj{
+    width: 500px;
+    height: 100px;
+}
+
+/* ----- MQ ----- */
+
+@media screen and (max-width: 559px) {
+    .input{
+        width: 300px;
+    }
+    .input_msj{
+        width: 300px;
+        height: 80px;
+    }
+}
