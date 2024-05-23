@@ -51,6 +51,14 @@ footer nav {
 footer nav div{
     justify-self: center;
 }
+
+.youtube, .instagram, .facebook{
+    align-self: center;
+}
+.youtube_icon, .instagram_icon, .facebook_icon{
+    align-self: end;
+}
+
 .icono_footer{
     width: 40px;
     height: 40px;
@@ -58,32 +66,26 @@ footer nav div{
 .youtube{
     grid-column: 1/4;
     grid-row: 2/3;
-    align-self: center;
 }
 .youtube_icon{
     grid-column: 1/4;
     grid-row: 1/2;
-    align-self: end;
 }
 .instagram{
     grid-column: 4/7;
     grid-row: 2/3;
-    align-self: center;
 }
 .instagram_icon{
     grid-column: 4/7;
     grid-row: 1/2;
-    align-self: end;
 }
 .facebook{
     grid-column: 7/10;
     grid-row: 2/3;
-    align-self: center;
 }
 .facebook_icon{
     grid-column: 7/10;
     grid-row: 1/2;
-    align-self: end;
 }
 
 .logo_pie{
@@ -130,11 +132,11 @@ footer nav div{
 /* -------------------------------------- ESTILOS PAGE INICIO -------------------------------------- */
 
 
-.portada_des{
+.portada_des, .portada_mob{
     padding-bottom: 20px ;
 }
 .portada_mob{
-    padding-bottom: 20px ;
+    display: none;
 }
 
 main h1{
@@ -165,10 +167,6 @@ a{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
     color: black;
-}
-
-.portada_mob{
-    display: none;
 }
 
 /* ----- MQ ----- */
@@ -360,36 +358,14 @@ section div{
     font-size: 20px;
 }
 
-.tapa_disco1{
-    display: inline-block;
-    width: 400px;
-}
-.tapa_disco2{
-    display: inline-block;
-    width: 400px;
-}
-.tapa_disco3{
-    display: inline-block;
-    width: 400px;
-}
-.tapa_single{
+.discografia img{
     display: inline-block;
     width: 400px;
 }
 
-.contratapa_disco1{
-    display: inline-block;
-    width: 400px;   
+.contratapa_disco1, .contratapa_disco2, .contratapa_disco3{
+    display: none;
 }
-.contratapa_disco2{
-    display: inline-block;
-    width: 400px;   
-}
-.contratapa_disco3{
-    display: inline-block;
-    width: 400px;   
-}
-
 
 .titulo{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -397,21 +373,8 @@ section div{
     color:floralwhite;
 }
 
-
 .descripcion{
     text-align: center;
-}
-
-
-
-.contratapa_disco1{
-    display: none;
-}
-.contratapa_disco2{
-    display: none;
-}
-.contratapa_disco3{
-    display: none;
 }
 
 /* ----- Pseudoclases ----- */
@@ -444,32 +407,13 @@ section div{
 /* ----- MQ ----- */
 
 @media screen and (max-width:420px) {
-    .tapa_disco1{
+    .discografia img{
         width: 300px;
-    }
-    .tapa_disco2{
-        width: 300px;
-    }
-    .tapa_disco3{
-        width: 300px;
-    }
-    .tapa_single{
-        width: 300px;
-    }   
-    .contratapa_disco1{
-        width: 300px;  
-    }
-    .contratapa_disco2{
-        width: 300px;
-    }
-    .contratapa_disco3{
-        width: 300px;  
     }
     .titulo{
         font-size: 20px;
     }
 }
-
 
 /* -------------------------------------- ESTILOS PAGE CONTACTO -------------------------------------- */
 
