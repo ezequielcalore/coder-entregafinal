@@ -47,59 +47,43 @@ footer nav {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 1fr;
     font-size: 15px;
-    justify-content: center;
-    align-content: center ;
 }
-
+footer nav div{
+    justify-self: center;
+}
+.icono_footer{
+    width: 40px;
+    height: 40px;
+}
 .youtube{
     grid-column: 1/4;
     grid-row: 2/3;
     align-self: center;
-    justify-self: center;
 }
 .youtube_icon{
     grid-column: 1/4;
     grid-row: 1/2;
     align-self: end;
-    justify-self: center; 
 }
-.youtube_img{
-    width: 40px;
-    height: 40px;
-}
-
 .instagram{
     grid-column: 4/7;
     grid-row: 2/3;
     align-self: center;
-    justify-self: center;
 }
 .instagram_icon{
     grid-column: 4/7;
     grid-row: 1/2;
     align-self: end;
-    justify-self: center; 
 }
-.instagram_img{
-    width: 40px;
-    height: 40px;
-}
-
 .facebook{
     grid-column: 7/10;
     grid-row: 2/3;
     align-self: center;
-    justify-self: center;
 }
 .facebook_icon{
     grid-column: 7/10;
     grid-row: 1/2;
     align-self: end;
-    justify-self: center; 
-}
-.facebook_img{
-    width: 40px;
-    height: 40px;
 }
 
 .logo_pie{
