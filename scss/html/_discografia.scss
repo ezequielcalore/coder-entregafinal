@@ -1,16 +1,18 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
 /*-------------------------------ESTILOS DISCOGRAFÍA-------------------------------*/
 main{
     .discografia{
         margin: 10px;
-        display: flex;
+        @include flex(row);
         gap: 30px;
         flex-wrap: wrap;
         justify-content: space-around;
         img{
             display: inline-block;
-            width: 350px;
+            @include medidas(350px, auto);
             @media screen and (max-width:420px) {
-                width: 300px;
+                @include medidas(300px, auto);
             }
         } 
         .contratapa_disco1, .contratapa_disco2, .contratapa_disco3{

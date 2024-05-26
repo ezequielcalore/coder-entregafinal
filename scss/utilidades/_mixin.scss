@@ -1,0 +1,17 @@
+//----------------------------MIXIN----------------------------
+
+@mixin medidas($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin grid($filas,$alto,$columnas,$ancho,$gap){
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat($columnas, $ancho);
+    grid-template-rows: repeat($filas, $alto);
+    gap: $gap;
+}
+@mixin flex($direction){
+    display: flex;
+    flex-direction: $direction;
+}

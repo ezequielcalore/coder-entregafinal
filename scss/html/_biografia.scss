@@ -1,15 +1,16 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
 /*-------------------------------ESTILOS BIOGRAFÍA-------------------------------*/
 main{
     .fotos_bio{
-        display: flex;
+        @include flex(row);
         justify-content: center;
     }
     .spotify{
-        display: flex;
+        @include flex(row);
         justify-content: center;
         iframe{
-            width: 80%;
-            height: 400px;
+            @include medidas(80%,400px);
         }
     }
     p{
@@ -19,6 +20,6 @@ main{
     }
     .carrousel_fotos{
         padding: 20px;
-        width: 130vh;
+        @include medidas(130vh, auto);
     }    
 }

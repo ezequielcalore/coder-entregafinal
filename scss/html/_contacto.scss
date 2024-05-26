@@ -1,31 +1,30 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
 /*-------------------------------ESTILOS CONTACTO-------------------------------*/
 main{
     .contacto{
         padding: 10px;
-        width: 100%;
+        @include medidas(100%, auto);
         h3{
             font-size: 20px;
         }
         .formulario{
-            display: flex;
-            flex-direction: column;
+            @include flex(column);
             align-items: center;
             row-gap: 30px;
         }
         .input{
-            width: 500px;
+            @include medidas(500px, auto);
         }
         .input_msj{
-            width: 500px;
-            height: 100px;
+            @include medidas(500px, 100px);
         }
         @media screen and (max-width: 559px) {
             .input{
-                width: 300px;
+                @include medidas(300px, auto);
             }
             .input_msj{
-                width: 300px;
-                height: 80px;
+                @include medidas(300px, 80px);
             }
         } 
     }    
