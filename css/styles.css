@@ -285,6 +285,16 @@ body .portada {
   text-align: center;
   margin-bottom: 50px;
 }
+body .portada img {
+  object-fit: cover;
+  width: 100%;
+}
+@media screen and (max-width: 559px) {
+  body .portada img {
+    object-fit: cover;
+    height: 100vh;
+  }
+}
 body .portada h1 {
   position: absolute;
   top: 30%;
@@ -295,6 +305,11 @@ body .portada_inicio h1 {
 }
 body .portada_biografia h1 {
   left: 75%;
+}
+@media screen and (max-width: 559px) {
+  body .portada_biografia h1 {
+    left: 25%;
+  }
 }
 body .portada_agenda h1 {
   left: 50%;
@@ -309,6 +324,11 @@ body h1 {
   padding: 10px 20px;
   font-size: 6vw;
   text-align: center;
+}
+@media screen and (max-width: 559px) {
+  body h1 {
+    font-size: 30px;
+  }
 }
 body h2 {
   font-size: 60px;

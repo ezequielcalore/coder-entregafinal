@@ -15,6 +15,16 @@ body{
         display: inline-block;
         text-align: center;
         margin-bottom: 50px;
+        img{
+            object-fit: cover;
+            width: 100%; 
+        }
+        @media screen and (max-width: 559px){
+            img{
+                object-fit: cover;
+                height: 100vh;
+            }
+        }
         h1{
             position: absolute;
             top: 30%;
@@ -29,7 +39,10 @@ body{
     .portada_biografia{
         h1{
             left: 75%;
-        }        
+            @media screen and (max-width: 559px){
+                left: 25%;
+            } 
+        }       
     }
     .portada_agenda{
         h1{
@@ -50,6 +63,9 @@ body{
         padding: 10px 20px;
         font-size: 6vw;
         text-align: center;
+        @media screen and (max-width: 559px){
+            font-size: 30px;
+        } 
     }
     h2{
         font-size: 60px;
@@ -190,8 +206,7 @@ footer{
         }
         .logo_pie{
             display: none;
-        }
-       
+        }     
         .youtube_icon{
             grid-column: 1/5;
             grid-row: 1/3;
