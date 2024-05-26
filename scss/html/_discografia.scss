@@ -1,0 +1,53 @@
+/*-------------------------------ESTILOS DISCOGRAFÍA-------------------------------*/
+main{
+    .discografia{
+        margin: 10px;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        img{
+            display: inline-block;
+            width: 350px;
+            @media screen and (max-width:420px) {
+                width: 300px;
+            }
+        } 
+        .contratapa_disco1, .contratapa_disco2, .contratapa_disco3{
+            display: none;
+        }
+        h2{
+            font-size: 20px;
+            text-align: center;
+        }
+        .single{
+            img:hover{
+                    filter: opacity(75%);
+                }
+        }      
+        .disco1:hover{
+            .tapa_disco1{
+                display: none;
+            }
+            .contratapa_disco1{
+                display: block;
+            }
+        }
+        .disco2:hover{
+                .tapa_disco2{
+                    display: none;
+                }
+                .contratapa_disco2{
+                    display: block;
+                }
+        }
+        .disco3:hover{
+                .tapa_disco3{
+                    display: none;
+                }
+                .contratapa_disco3{
+                    display: block;
+                }
+        }
+    }   
+}

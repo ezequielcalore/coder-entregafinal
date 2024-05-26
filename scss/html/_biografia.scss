@@ -1,0 +1,24 @@
+/*-------------------------------ESTILOS BIOGRAFÍA-------------------------------*/
+main{
+    .fotos_bio{
+        display: flex;
+        justify-content: center;
+    }
+    .spotify{
+        display: flex;
+        justify-content: center;
+        iframe{
+            width: 80%;
+            height: 400px;
+        }
+    }
+    p{
+        font-size: 18px;
+        text-align: justify;
+        margin: 5mm;
+    }
+    .carrousel_fotos{
+        padding: 20px;
+        width: 130vh;
+    }    
+}
