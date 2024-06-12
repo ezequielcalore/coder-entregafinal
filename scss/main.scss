@@ -1,4 +1,8 @@
 //----------------------------------IMPORTS----------------------------------//
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/animaciones";
+
 @import "html/agenda";
 @import "html/inicio";
 @import "html/biografia";
@@ -6,6 +10,3 @@
 @import "html/contacto";
 @import "html/general";
 
-@import "utilidades/variables";
-@import "utilidades/mixin";
-@import "utilidades/animaciones";
